@@ -13,6 +13,44 @@
       box-sizing: border-box;
     }
 
+<script>
+const translations = {
+  kaa: {
+    home: "Bas bet",
+    services: "Xızmetler",
+    title: "Bizdiń xızmetlerimiz",
+    slogan: "Qaraqalpaqstan — bir platformada!",
+    start: "Baslaw"
+  },
+  uz: {
+    home: "Bosh sahifa",
+    services: "Xizmatlar",
+    title: "Bizning xizmatlarimiz",
+    slogan: "Qoraqalpog‘iston — bir platformada!",
+    start: "Boshlash"
+  },
+  en: {
+    home: "Home",
+    services: "Services",
+    title: "Our Services",
+    slogan: "Karakalpakstan — all in one platform!",
+    start: "Get Started"
+  }
+};
+
+function changeLanguage(lang) {
+  const t = translations[lang];
+
+  document.querySelector('nav a[href="#home"]').textContent = t.home;
+  document.querySelector('nav a[href="#services"]').textContent = t.services;
+  document.querySelector('.services h2').textContent = t.title;
+  document.querySelector('.hero p').textContent = t.slogan;
+  document.querySelector('.hero button').textContent = t.start;
+}
+</script>
+</body>
+</html>
+    
     body {
       font-family: Arial, sans-serif;
       background: #071426;
