@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="kaa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart QARAQALPAQSTAN</title>
+  <meta name="description" content="Qaraqalpaqstan ushın zamanagóy cifrlı platforma">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 7%;
+      background: #0d2038;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #36d6c5;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #36d6c5;
+    }
+
+    .hero p {
+      color: #b6c5d8;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background: #36d6c5;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 9px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .services {
+      padding: 40px 7%;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #102944;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #24435f;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #36d6c5;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #9aacc0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Smart QARAQALPAQSTAN</div>
+  <nav>
+    <a href="#home">Bas bet</a>
+    <a href="#services">Xızmetler</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Smart <span>QARAQALPAQSTAN</span></h1>
+  <p>Qaraqalpaqstan — bir platformada!</p>
+  <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+    Baslaw
+  </button>
+</section>
+
+<section class="services" id="services">
+  <h2>Bizdiń xızmetlerimiz</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🗺️ Smart Map</h3>
+      <p>Qaraqalpaqstan kartası</p>
+    </div>
+    <div class="card">
+      <h3>🎓 Bilim</h3>
+      <p>Bilim hám oqıw orınları</p>
+    </div>
+    <div class="card">
+      <h3>💼 Jumıs</h3>
+      <p>Jumıs izlew platforması</p>
+    </div>
+    <div class="card">
+      <h3>🏢 Biznes</h3>
+      <p>Jergilikli biznesler</p>
+    </div>
+    <div class="card">
+      <h3>🤖 Smart AI</h3>
+      <p>AI járdemshisi</p>
+    </div>
+    <div class="card">
+      <h3>📰 Jańalıqlar</h3>
+      <p>Aymaq jańalıqları</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Smart QARAQALPAQSTAN
+</footer>
+
+</body>
+</html>
